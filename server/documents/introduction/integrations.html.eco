@@ -51,23 +51,17 @@ type        : 'Introduction'
     <div class="code" data-type="bash">
       meteor add less juliancwirko:postcss
     </div>
-    <p>To configure the postcss package, add the following to your <code>package.json</code> file and save it.</p>
-    <div class="code" data-type="json">
-      {
-        "devDependencies": {
-          "autoprefixer": "^6.3.1"
-        },
-        "postcss": {
-          "plugins": {
-            "autoprefixer": {"browsers": ["last 2 versions"]}
-          }
-        }
-      }
+    <p>Install peer dependancies (postcss and postcss-load-config)
+    <div class="code" data-type="bash">
+      meteor npm install --save-dev postcss@6.0.22 postcss-load-config@1.2.0 autoprefixer@^6.3.1
     </div>
     <p>To finish setting up the postcss package, install the new autoprefixer NPM package.</p>
     <div class="code" data-type="bash">
       meteor npm install
     </div>
+    <p>It's not necessary to configure PostCSS, but should be considered. You can read more about that
+      <a href="https://github.com/juliancwirko/meteor-postcss#usage">here</a>.
+    </p>
   </div>
   <div class="no example">
     <h4 class="ui header">Create a custom.semantic.json file</h4>
